@@ -8,22 +8,32 @@ public class Main {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        if (a > b) {
-            if(a > c) {
-                System.out.println(c);
-            }
-            if (a < c) {
-                System.out.println(a);
-            }
-        }
-        if (b > a) {
+        if (a > b && a > c) {
             if (b > c) {
+                System.out.println(b);
+            } else {
                 System.out.println(c);
             }
-            if (b < c) {
+            }
+            
+
+        if (b > a && b > c) {
+            if (a > c) {
+                System.out.println(a);
+            } else {
+                System.out.println(c);
+            }
+            }
+        
+        if (c > b && c > a) {
+            if (a > b) {
+                System.out.println(a);
+            } else {
                 System.out.println(b);
             }
+            }
         }
+
         sc.close();
     }
 }
