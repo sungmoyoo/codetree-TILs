@@ -14,7 +14,7 @@ public class Main {
             } else {
                 System.out.println(c);
             }
-            }
+        }
             
 
         if (b > a && b > c) {
@@ -23,7 +23,7 @@ public class Main {
             } else {
                 System.out.println(c);
             }
-            }
+        }
         
         if (c > b && c > a) {
             if (a > b) {
@@ -31,9 +31,7 @@ public class Main {
             } else {
                 System.out.println(b);
             }
-            }
         }
-
-        sc.close();
     }
+    sc.close();
 }
