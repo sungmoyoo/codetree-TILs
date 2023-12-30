@@ -7,9 +7,10 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        for (int i = a; i <= 9; i += 2) {
+        for (int i = a; i <= b; i += 2) {
             System.out.printf("%d ",i);
         }
 
+        sc.close();
     }
 }
