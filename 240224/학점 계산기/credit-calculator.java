@@ -27,10 +27,10 @@ public class Main {
         avg = sum / (float) list.size();
         bw.write(String.format("%.1f",avg) + "\n");
 
-        if (avg > 4.0) {
+        if (avg >= 4.0) {
             bw.write("Perfect\n");
 
-        } else if (avg > 3.0) {
+        } else if (avg >= 3.0) {
             bw.write("Good\n");
 
         } else {
