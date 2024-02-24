@@ -10,22 +10,23 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        ArrayList<Float> list = new ArrayList<>();
-        float sum = 0;
-        float avg = 0;
+        ArrayList<Double> list = new ArrayList<>();
+        double sum = 0;
+        double avg = 0;
 
         int n = Integer.parseInt(br.readLine());
 
         StringTokenizer st = new StringTokenizer(br.readLine());
         for (int i = 0; i < n; i++) {
-            list.add(Float.parseFloat(st.nextToken()));
+            list.add(Double.parseDouble(st.nextToken()));
         }
 
-        for (float value : list) {
+        for (double value : list) {
             sum += value;
         }
-        avg = sum / (float) list.size();
-        bw.write(String.format("%.1f",avg) + "\n");
+        avg = sum / (double) list.size();
+        bw.write(String.format("%.1f", avg));
+        bw.write("\n");
 
         if (avg >= 4.0) {
             bw.write("Perfect\n");
