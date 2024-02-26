@@ -20,6 +20,6 @@ public class Main {
         }
 
         System.out.print(sum1 + " ");
-        System.out.print((double) sum2 / cnt);
+        System.out.printf("%.1f", (double) sum2 / cnt);
     }
 }
