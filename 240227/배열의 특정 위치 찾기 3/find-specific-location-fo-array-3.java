@@ -22,7 +22,7 @@ public class Main {
             cnt++;
         }
 
-        for (int i = cnt-1; i >= 0; i--) {
+        for (int i = cnt-1; i >= cnt-3; i--) {
             sum += list.get(i);
         }
 
