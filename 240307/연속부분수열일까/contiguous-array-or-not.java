@@ -22,15 +22,21 @@ public class Main {
         for (int value : A) {
             if (value == B[idx]) {
                 idx++;
+                if (idx == n2) {
+                    System.out.println("Yes");
+                    break;
+                }
             } else {
                 idx = 0;
             }
         }
 
-        if (idx > 1) {
-            System.out.println("Yes");
-        } else {
+        if (idx != n2) {
             System.out.println("No");
-        }
+        }           
+ 
+        
+        
+        sc.close();
     }
 }
