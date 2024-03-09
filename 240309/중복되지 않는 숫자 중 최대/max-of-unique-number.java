@@ -20,7 +20,7 @@ public class Main {
                 }
             }
         }
-        if (max == 0) {
+        if (max <= 0) {
             System.out.println(-1);
         } else {
             System.out.println(max);
