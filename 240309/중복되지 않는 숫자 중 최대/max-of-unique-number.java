@@ -16,7 +16,7 @@ public class Main {
 
         for (int i = 1; i < arrCount.length; i++) {
             if (arrCount[i] < 2) {
-                if (arrCount[i] > max) {
+                if (i > max) {
                     max = i;
                 }
             }
