@@ -7,7 +7,7 @@ public class Main {
         int N = sc.nextInt();
 
         int[] arrCount = new int[N+1];
-        int max = 0;
+        int INT_MAX = Integer.MIN_VALUE;
 
         for (int i = 0; i < N; i++) {
             arrCount[sc.nextInt()]++;
@@ -15,15 +15,15 @@ public class Main {
 
         for (int i = 1; i < arrCount.length; i++) {
             if (arrCount[i] == 1) {
-                if (i > max) {
-                    max = i;
+                if (i > INT_MAX) {
+                    INT_MAX = i;
                 }
             }
         }
-        if (max <= 0) {
+        if (INT_MAX < 0) {
             System.out.println(-1);
         } else {
-            System.out.println(max);
+            System.out.println(INT_MAX);
         }
 
         sc.close();
