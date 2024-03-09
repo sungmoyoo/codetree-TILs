@@ -5,17 +5,16 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int N = sc.nextInt();
-        int[] arr = new int[N];
-        int[] arrCount = new int[N];
+
+        int[] arrCount = new int[N+1];
         int max = 0;
 
         for (int i = 0; i < N; i++) {
-            arr[i] = sc.nextInt();
-            arrCount[arr[i]]++;
+            arrCount[sc.nextInt()]++;
         }
 
         for (int i = 1; i < arrCount.length; i++) {
-            if (arrCount[i] < 2) {
+            if (arrCount[i] == 1) {
                 if (i > max) {
                     max = i;
                 }
