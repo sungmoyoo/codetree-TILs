@@ -13,13 +13,11 @@ public class Main {
         }
 
         int sum = 0;
-        int range = 1;
 
         for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < range; j++) {
+            for (int j = 0; j <= i; j++) {
                 sum += arr[i][j];
             }
-            range++;
         }
         System.out.println(sum);
 
