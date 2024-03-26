@@ -10,17 +10,18 @@ public class Main {
         }
         char c = sc.nextLine().charAt(0);
         
-        boolean None = false;
+        int printCount = 0;
         for (int i = 0; i < 10; i++) {
             if (list[i].charAt(list[i].length()-1) == c) {
                 System.out.println(list[i]);
-            } else {
-                None = true;
+                printCount++;
             }
         }
-        if (None == true) {
+
+        if (printCount == 0) {
             System.out.println("None");
         }
+        
         sc.close();
     }
 }
