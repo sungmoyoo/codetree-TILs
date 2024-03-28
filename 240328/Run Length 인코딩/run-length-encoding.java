@@ -16,12 +16,14 @@ public class Main {
                 count++;
                 if (i+1 == A.length()-1) {
                     list.add(String.valueOf(++count));
-                    count = 0;
                 }
             } else {
                 list.add(String.valueOf(++count));
                 list.add(String.valueOf(A.charAt(i+1)));
                 count = 0;
+                if (i+1 == A.length()-1) {
+                    list.add(String.valueOf(++count));
+                }
             }
         }
         String result = "";
