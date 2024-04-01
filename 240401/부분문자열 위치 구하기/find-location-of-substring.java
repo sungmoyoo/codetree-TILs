@@ -8,7 +8,7 @@ public class Main {
         String target = sc.nextLine();
         int exist = -1;
 
-        for (int i = 0; i < input.length()-target.length()-1; i++) {
+        for (int i = 0; i <= input.length()-target.length(); i++) {
             if (target.equals(input.substring(i, i+target.length()))) {
                 exist = i;
                 break;
