@@ -1,21 +1,24 @@
-import java.util.Scanner;
+import java.util.*;
+import java.io.*;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        String s = st.nextToken();
 
-        String s = sc.next();
-
-        int q = sc.nextInt();
+        int q = Integer.parseInt(st.nextToken());
 
         for (int i = 0; i < q; i++) {
-            int no = sc.nextInt();
+            int no = Integer.parseInt(br.readLine());
+
             if (no == 1) {
                 s = s.substring(1) + s.substring(0,1);
-                System.out.println(s);
+                bw.write(s + "\n");
             } else if (no == 2) {
                 s = s.substring(s.length()-1) + s.substring(0, s.length()-1);
-                System.out.println(s);
+                bw.write(s + "\n");
             } else if (no == 3) {
                 char[] arr = s.toCharArray();
                 String result = "";
@@ -23,10 +26,11 @@ public class Main {
                     result += arr[j];
                 }
                 s = result;
-                System.out.println(s);
+                bw.write(s + "\n");
             }
         }
 
-        sc.close();
+        bw.close();
+        br.close();
     }
 }
