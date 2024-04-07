@@ -5,8 +5,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         char c = sc.next().charAt(0);
-
-        System.out.print((char) (c + 1));
+        if (c == 'z') {
+            c = 'a';
+        } else {
+            c = (char) (c + 1);
+        }
+        
+        System.out.print(c);
 
         sc.close();
     }
