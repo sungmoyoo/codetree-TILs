@@ -9,7 +9,7 @@ public class Main {
         String result = "";
 
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) >= 'A' && s.charAt(i) < 'Z' || s.charAt(i) > 'a' && s.charAt(i) < 'z') {
+            if (s.charAt(i) >= 'A' && s.charAt(i) <= 'Z' || s.charAt(i) >= 'a' && s.charAt(i) <= 'z') {
                 result += s.charAt(i);
             } 
         }
