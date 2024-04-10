@@ -8,17 +8,19 @@ public class Main {
         String s2 = sc.next();
 
         for (int i = 0; i < s1.length(); i++) {
-            if (s1.charAt(i) <= '0' || s1.charAt(i) >= '9') {
-                s1 = s1.substring(0,i);
+            if (s1.charAt(i) >= '0' && s1.charAt(i) <= '9') {
+            } else {
+                s1 = s1.substring(0, i);
             }
             
         }
         for (int i = 0; i < s2.length(); i++) {
-            if (s2.charAt(i) <= '0' || s2.charAt(i) >= '9') {
-                s2 = s2.substring(0,i);
+            if (s2.charAt(i) >= '0' && s2.charAt(i) <= '9') {
+            } else {
+                s2 = s2.substring(0, i);
             }
         }
-        
+
         System.out.println(Integer.parseInt(s1) + Integer.parseInt(s2));
 
         sc.close();
