@@ -8,15 +8,16 @@ public class Main {
 
         int n = Integer.parseInt(st.nextToken());
         String A = st.nextToken();
-
+        int count = 0;
         for (int i = 0 ; i < n; i++) {
             String s = br.readLine();
 
-            if (A.equals(s)) {
-                System.out.println(i);
+            if (s.equals(A)) {
+                count++;
             }
         }
-        
+        System.out.println(count);
+
         br.close();
     }
 }
