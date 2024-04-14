@@ -15,7 +15,7 @@ public class Main {
                 exist = true;
                 break;
             } 
-            A.append(A.charAt(0)).deleteCharAt(0);
+            A.insert(0, A.charAt(A.length()-1)).deleteCharAt(A.length()-1);
             n++;
         }
         if (exist == true) {
