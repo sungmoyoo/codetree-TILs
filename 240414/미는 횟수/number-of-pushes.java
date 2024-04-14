@@ -11,7 +11,7 @@ public class Main {
         boolean exist = false;
 
         for (int i = 0; i < A.length(); i++) {
-            if (A.toString().equals(B)) {
+            if (B.equals(A.toString())) {
                 exist = true;
                 break;
             } 
